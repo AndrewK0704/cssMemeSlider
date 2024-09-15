@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+/*----------------------------------*/
+
+.slider{
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    border: 0.5rem solid #fff;
+    margin: 10vh auto;
+}
+
+.slides{
+    width: 400%;
+    height: 70%;
+    display: flex;
+}
+
+input[name="r"]{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    transition: all 0.6s ease; 
+}
+
+.slide img{ 
+    width: 100%;
+    height: 100%;  
+}
+
+/*----------------------------------*/
+
+.box{
+    width: 100%;
+    height: 14vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw auto;
+}
+
+.box-text{
+    width: 70%;
+    height: 14vw;
+    overflow: hidden;
+    border: 0.25rem solid #fff;   
+}
+
+.text{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.text>p{
+    font-size: 1.5rem;
+    width: 25%;
+    transition: all 0.6s ease; 
+}
+
+/*----------------------------------*/
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 24%;
+}
+
+.bar{
+    width: 20%;
+    aspect-ratio: 1/1;
+    margin: 1%;
+    cursor: pointer;
+    background-color: #941631;
+    opacity: 0.7;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.bar:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*----------------------------------*/
+
+#r1:checked ~ .sl{
+    margin-left: 0;
+}
+
+#r2:checked ~ .sl{
+    margin-left: -25%;
+}
+
+#r3:checked ~ .sl{
+    margin-left: -50%;
+}
+
+#r4:checked ~ .sl{
+    margin-left: -75%;
+}
