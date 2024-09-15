@@ -80,7 +80,6 @@ input[name="r"]{
 .bar{
     width: 20%;
     aspect-ratio: 1/1;
-    margin: 1%;
     cursor: pointer;
     background-color: #941631;
     opacity: 0.7;
