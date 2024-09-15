@@ -108,18 +108,18 @@ input[name="r"]{
     }
 }
 
-#r1:checked ~ .sl{
+#r1:checked ~ .box > .box-text > .text > .text-active, #r1:checked ~ .slides > .sl{
     margin-left: 0;
 }
 
-#r2:checked ~ .sl{
+#r2:checked ~ .box > .box-text > .text > .text-active, #r2:checked ~ .slides > .sl{
     margin-left: -25%;
 }
 
-#r3:checked ~ .sl{
+#r3:checked ~ .box > .box-text > .text > .text-active, #r3:checked ~ .slides > .sl{
     margin-left: -50%;
 }
 
-#r4:checked ~ .sl{
+#r4:checked ~ .box > .box-text > .text > .text-active, #r4:checked ~ .slides > .sl{
     margin-left: -75%;
 }
